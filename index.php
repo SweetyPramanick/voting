@@ -15,7 +15,7 @@
             
             <h2 class="text-center">Login</h2>
             <div class="container text-center">
-                <form action="./actions/login.php" method="POST" enctype="multipart/form-data">
+                <form action="./action/send_otp.php" method="POST" enctype="multipart/form-data">
 
                     <div class="mb-3">
                         <input type="email" class="form-control w-50 m-auto" name="email" placeholder="Enter your email" require="required">

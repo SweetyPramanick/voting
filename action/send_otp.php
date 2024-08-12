@@ -9,8 +9,11 @@ if(mysqli_num_rows($rs)>0){
     send_otp($email,"PHP OTP LOGIN",$otp);
     $sql="UPDATE users set user_otp='$otp' where email='$email'";
     $rs=mysqli_query($con,$sql) ;
+
+
     echo '<script>
     alert("Plz check your email for OTP and verify");
+    var email="$email";
     window.location="../partials/validate_otp.php";
     </script>';
     //header("location:actions/verify.php?msg=Plz check your email for OTP and verify");

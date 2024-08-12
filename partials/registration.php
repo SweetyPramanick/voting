@@ -11,13 +11,13 @@
     <div class="bg-info py-4">
         <h2 class="text-center">Register Account</h2>
         <div class="container text-center">
-            <form action="../actions/send_mail.php" method="POST" enctype="multipart/form-data">
+            <form action="../action/send_mail.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <input type="text" class="form-control w-50 m-auto" name="fullname" placeholder="Enter your fullname" require="required">
                 </div>
 
                 <div class="mb-3">
-                    <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number" require="required">
+                    <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile number" require="required" maxLength="10" minLength="10">
                 </div>
 
                 <div class="mb-3">

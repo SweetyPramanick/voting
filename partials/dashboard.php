@@ -17,9 +17,9 @@ if($_SESSION['status']==1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voting system dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body class="bg-secondary text-light">
+<body class="bg-info py-4">
     <div class="container my-5">
         <a href="../"><button class="btn btn-dark text-light px-3">Back</button></a>
         <a href="logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
@@ -36,7 +36,7 @@ if($_SESSION['status']==1){
                             <img src="../uploads/<?php echo $groups[$i]['photo']?>" alt="Group Image">
                         </div>
                         <div class="col-md-8">
-                            <strong class="text-dark h5">Group name:</strong>
+                            <strong class="text-dark h5">Candidate name:</strong>
                             <?php echo $groups[$i]['fullname'] ?>
                             <br>
                             <strong class="text-dark h5">Votes:</strong>
@@ -45,7 +45,7 @@ if($_SESSION['status']==1){
                         </div>
                         <hr>
                         </div> 
-                        <form action="../actions/voting.php" method="POST">
+                        <form action="../action/voting.php" method="POST">
                             <input type="hidden" name="groupvotes" value="<?php echo $groups[$i]['votes']?>">
                             <input type="hidden" name="groupid" value="<?php echo $groups[$i]['id']?>">
                         <?php
@@ -78,7 +78,7 @@ if($_SESSION['status']==1){
             
             <div class="col-md-5">
                 <!--user profile-->
-                <img src="" alt="User image">
+                <img src="../img/user.jpeg" alt="User image">
                 <br>
                 <br>
                 <strong class="text-dark h5">Name:</strong>

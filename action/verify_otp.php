@@ -3,12 +3,14 @@ session_start();
 include('connect.php');
 
 $email= $_POST['email'];
+$otp= $_POST['user_otp'];
 //$mobile= $_POST['mobile'];
 $password= $_POST['password'];
 //$verify_token= md5(rand());
 $std= $_POST['std'];
 
-$sql= "SELECT * from users where email= '$email' and password= '$password'";
+//$sql= "SELECT * from users where email= '$email' and password= '$password'";
+$sql= "SELECT * from users where user_otp='$otp'";
 $result= mysqli_query($con,$sql);
 //echo var_dump($result);
 if(mysqli_num_rows($result)>0){

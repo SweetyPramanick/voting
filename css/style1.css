@@ -11,9 +11,10 @@
 
 .nav_li{
     padding: 15px;
+    /* text-decoration: none; */
 }
 
-.nav_a{
+.nav-a{
     text-decoration: none;
     color:white;
 }

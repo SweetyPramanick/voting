@@ -30,7 +30,7 @@ function sendVerificationEmail($fullname, $email, $verify_token)
         $mail->Body    = "<h2>You have successfully registered</h2>
                           <h3>Verify your email to login using the link below:</h3>
                           <br/>
-                          <a href='http://localhost/evoting/actions/verify_email.php?verify_token=$verify_token'>Click here to verify your email</a>";
+                          <a href='http://localhost/vendor1/action/verify_email.php?verify_token=$verify_token'>Click here to verify your email</a>";
 
         $mail->send();
         echo 'Verification email has been sent.';
@@ -78,7 +78,7 @@ if (isset($_POST['submit'])) {
                 // Registration successful
                 echo '<script>
                     alert("Registration successful! Please verify your email.");
-                    window.location="../partials/dashboard.php";
+                    window.location="../";
                     </script>';
             } else {
                 // Query failed

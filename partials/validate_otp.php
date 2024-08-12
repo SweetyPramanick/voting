@@ -1,3 +1,6 @@
+<!-- <?php
+//$email=$_get['email'];
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,7 @@
             
             <h2 class="text-center">Login with OTP</h2>
             <div class="container text-center">
-                <form action="../actions/login.php" method="POST">
+                <form action="../action/verify_otp.php" method="POST">
                     <!-- <div class="alert alert-primary" role="alert">
                         //<?php
                         //if(isset($_REQUEST['msg']))
