@@ -21,8 +21,8 @@ if($_SESSION['status']==1){
 </head>
 <body class="bg-info py-4">
     <div class="container my-5">
-        <a href="../"><button class="btn btn-dark text-light px-3">Back</button></a>
-        <a href="logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
+        <a href="../partials/index.php"><button class="btn btn-dark text-light px-3">Back</button></a>
+        <a href="../action/logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
         <h1>Voting System</h1>
         <div class="row my-5">
             <div class="col-md-7">

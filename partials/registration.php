@@ -49,7 +49,7 @@
                     //echo $msg;
                     //?>
                 </div> -->
-                <p>Already have an account? <a href="../" class="text-white">Login here</a></p>
+                <p>Already have an account? <a href="../partials/index.php" class="text-white">Login here</a></p>
             </form>
         </div>
     </div>

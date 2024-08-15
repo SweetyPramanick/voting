@@ -27,14 +27,14 @@ if(mysqli_num_rows($result)>0){
     $_SESSION['data']=$data;
 
     echo '<script>
-    
+    alert("You have successfully logged in.");
     window.location= "../partials/dashboard.php";
     </script>';
 
 }else{
     echo '<script>
     alert("Invalid Credentials");
-    window.location= "../";
+    window.location= "../partials/index.php";
     </script>';
 }
 

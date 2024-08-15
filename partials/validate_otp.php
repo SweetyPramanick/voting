@@ -19,37 +19,14 @@
             <h2 class="text-center">Login with OTP</h2>
             <div class="container text-center">
                 <form action="../action/verify_otp.php" method="POST">
-                    <!-- <div class="alert alert-primary" role="alert">
-                        //<?php
-                        //if(isset($_REQUEST['msg']))
-                        //echo $_REQUEST['msg'];
-                        //?>
-                    </div>
-                 -->
-                
-                    <!-- <div class="mb-3">
-                        <input type="email" class="form-control w-50 m-auto" name="email" placeholder="Enter your email" require="required">
-                    </div> -->
+                    
 
                     <div class="mb-3">
                         <input type="text" class="form-control w-50 m-auto" name="user_otp" placeholder="Enter 5 digit OTP" require="required">
                     </div>
 
                     
-                    <!-- <div class="mb-3">
-                        <input type="text" class="form-control w-50 m-auto" name="mobile" placeholder="Enter your mobile no." require="required" maxLength="10" minLength="10">
-                    </div>
                     
-                    <div class="mb-3">
-                        <input type="password" class="form-control w-50 m-auto" name="password" placeholder="Enter your password" require="required">
-                    </div> -->
-                    
-                    <!-- <div class="mb-3">
-                        <select name="std" class="form-select w-50 m-auto">
-                            <option value="group">Group</option>
-                            <option value="voter">Voter</option>
-                        </select>
-                    </div> -->
                     <button type="submit" class="btn btn-dark my-4">Verify OTP</button>
                     <!-- <a href="../partials/dashboard.php" class="text-white"></a> -->
                 </form>

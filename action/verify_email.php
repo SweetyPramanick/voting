@@ -27,7 +27,7 @@ if(isset($_GET['verify_token'])){
                 // exit(0);
                 echo '<script>
                 alert("Your account has been verified successful.!");
-                window.location="../";
+                window.location="../partials/index.php";
                 </script>';
                 exit(0);
                 
@@ -39,7 +39,7 @@ if(isset($_GET['verify_token'])){
                 // exit(0);
                 echo '<script>
                 alert("Verification failed.!");
-                window.location="../";
+                window.location="../partials/index.php";
                 </script>';
                 exit(0);
             }
@@ -51,7 +51,7 @@ if(isset($_GET['verify_token'])){
             // exit(0);
             echo '<script>
             alert("Email already verified. Please Login");
-            window.location="../";
+            window.location="../partials/index.php";
             </script>';
             exit(0);
         }
@@ -62,7 +62,7 @@ if(isset($_GET['verify_token'])){
         // header("location:../");
         echo '<script>
         alert("This token does not exist");
-        window.location="../";
+        window.location="../partials/index.php";
         </script>';
     }
 }
@@ -72,7 +72,7 @@ else
     // header("location:../");
     echo '<script>
     alert("Not allowed");
-    window.location="../";
+    window.location="../partials/index.php";
     </script>';
 }
 ?>

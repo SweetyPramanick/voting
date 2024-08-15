@@ -22,7 +22,7 @@ if(mysqli_num_rows($rs)>0){
 else{
     echo '<script>
     alert("Email is invalid... Plz check again");
-    window.location="../";
+    window.location="../partials/index.php";
     </script>';
     //header("location:index.php?msg=Email is invalid... Plz check again");
     //echo "Email not found";

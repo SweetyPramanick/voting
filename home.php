@@ -25,7 +25,7 @@
           <a class="nav-a active" aria-current="page" href="#">Home<span class="sr-only"></span></a>
         </li>
         <li class="nav_li">
-          <a class="nav-a" href="../">Login</a>
+          <a class="nav-a" href="../partials/index.php">Login</a>
         </li>
         <li class="nav_li">
           <a class="nav-a" href="../partials/registration.php">Register</a>
@@ -46,7 +46,7 @@
                 <div class="col-md-6 text-center">
                     <h1 class="bannerh1">Online Voting System</h1>
                     <p>Online voting systems are voting platforms used to securely conduct votes and elections. As a digital platform, they eliminate the need to cast your votes using paper or having to gather in person</p>
-                    <a href="../"><button class="votingbtn">Vote Now</button></a>
+                    <a href="../partials/index.php"><button class="votingbtn">Vote Now</button></a>
                 </div>
                 <div class="col-md-6 mb-5">
                     <img src="../img/vote.jpeg" width="90%" height="400vh" alt="Banner Image">

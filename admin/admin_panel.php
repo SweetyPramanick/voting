@@ -22,7 +22,7 @@ if(!isset($_SESSION['Id']))
     <div class="header">
         <h1>WELCOME TO ADMIN PANEL</h1>
         <!-- <form method="POST"> -->
-        <a href="../actions/logout.php"><button name="logout">Log Out</button></a>
+        <a href="../action/logout.php"><button name="logout">Log Out</button></a>
         <!-- </form> -->
     </div>
 </body>

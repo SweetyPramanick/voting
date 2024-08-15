@@ -78,7 +78,7 @@ if (isset($_POST['submit'])) {
                 // Registration successful
                 echo '<script>
                     alert("Registration successful! Please verify your email.");
-                    window.location="../";
+                    window.location="../partials/index.php";
                     </script>';
             } else {
                 // Query failed
